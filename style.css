@@ -140,3 +140,117 @@ p,span,div,a,li{
       font-size: 16px;
     }
   }
+
+
+
+/* Amenities section */
+    .backface-hidden {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+ 
+    .coin-wrap {
+      overflow: hidden;
+      border-radius: 9999px;
+    }
+ 
+    .section-arrived .section-shine {
+      animation: sectionShine 1.4s ease forwards;
+    }
+ 
+    .section-arrived .heading-anim {
+      animation: textReveal 0.8s ease forwards;
+    }
+ 
+    .section-arrived .heading-anim:nth-child(2) {
+      animation-delay: 0.15s;
+    }
+ 
+    .section-arrived .amenity-item {
+      animation: itemReveal 0.75s ease forwards;
+    }
+ 
+    .section-arrived .amenity-item:nth-child(1) { animation-delay: 0.05s; }
+    .section-arrived .amenity-item:nth-child(2) { animation-delay: 0.12s; }
+    .section-arrived .amenity-item:nth-child(3) { animation-delay: 0.19s; }
+    .section-arrived .amenity-item:nth-child(4) { animation-delay: 0.26s; }
+    .section-arrived .amenity-item:nth-child(5) { animation-delay: 0.33s; }
+    .section-arrived .amenity-item:nth-child(6) { animation-delay: 0.40s; }
+    .section-arrived .amenity-item:nth-child(7) { animation-delay: 0.47s; }
+    .section-arrived .amenity-item:nth-child(8) { animation-delay: 0.54s; }
+    .section-arrived .amenity-item:nth-child(9) { animation-delay: 0.61s; }
+    .section-arrived .amenity-item:nth-child(10) { animation-delay: 0.68s; }
+ 
+    .section-arrived .amenity-item .auto-coin {
+      animation: autoFlip 3.8s ease-in-out infinite;
+    }
+ 
+    .section-arrived .amenity-item .coin-shine {
+      animation: coinShine 3.8s ease-in-out infinite;
+    }
+ 
+    .section-arrived .amenity-item .text-anim {
+      animation: textReveal 0.7s ease forwards;
+    }
+ 
+    @keyframes autoFlip {
+      0%, 18%, 100% {
+        transform: rotateY(0deg);
+      }
+      32%, 68% {
+        transform: rotateY(180deg);
+      }
+      82% {
+        transform: rotateY(360deg);
+      }
+    }
+ 
+    @keyframes coinShine {
+      0%, 10%, 100% {
+        left: -55%;
+        opacity: 0;
+      }
+      18% {
+        opacity: 1;
+      }
+      38% {
+        left: 130%;
+        opacity: 0;
+      }
+    }
+ 
+    @keyframes sectionShine {
+      0% {
+        left: -30%;
+        opacity: 0;
+      }
+      15% {
+        opacity: 1;
+      }
+      100% {
+        left: 120%;
+        opacity: 0;
+      }
+    }
+ 
+    @keyframes textReveal {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+ 
+    @keyframes itemReveal {
+      from {
+        opacity: 0;
+        transform: translateY(32px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
