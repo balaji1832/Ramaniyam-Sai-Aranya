@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ramaniyam Header</title>
+    <link rel="icon" type="image/x-icon" href="icons/topicon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
     <!-- Google Web Fonts -->
@@ -129,243 +130,239 @@
         </div>
       </section>
       <!-- section 1 -->
-      <section class="relative w-full overflow-hidden bg-[#d8cbbc] mb-10">
-        <!-- Left light panel -->
-        <div class="absolute left-0 top-0 h-full w-[24.5%] bg-[#f1f1f1]"></div>
+      <section class="relative mb-10 w-full overflow-hidden bg-[#d8cbbc]">
+  <!-- Left light panel -->
+  <div class="absolute left-0 top-0 hidden h-full w-[24.5%] bg-[#f1f1f1] lg:block"></div>
 
-        <!-- Top dotted pattern -->
+  <!-- Top dotted pattern -->
+  <div
+    class="pointer-events-none absolute left-[42%] top-0 hidden h-[90px] w-[180px] -translate-x-1/2 opacity-25 md:block"
+  >
+    <div
+      class="h-full w-full bg-[radial-gradient(circle,_#8a6b6b_1.2px,_transparent_1.2px)] bg-[length:14px_14px]"
+    ></div>
+  </div>
+
+  <div
+    class="relative mx-auto max-w-[1600px] px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-28"
+  >
+    <div
+      class="grid grid-cols-1 items-center gap-8 py-10 sm:py-12 md:py-14 lg:grid-cols-[43%_57%] lg:gap-12 lg:py-14 xl:gap-16"
+    >
+      <!-- Left image block -->
+      <div class="flex justify-center lg:justify-start">
         <div
-          class="pointer-events-none absolute left-[42%] top-0 hidden h-[130px] w-[220px] -translate-x-1/2 md:block opacity-30"
+          class="w-full max-w-[500px] border-[6px] border-[#5c1f2d] bg-transparent p-[10px] sm:border-[7px] md:max-w-[540px] lg:ml-[12px] xl:ml-[24px]"
         >
-          <div
-            class="h-full w-full bg-[radial-gradient(circle,_#8a6b6b_1.2px,_transparent_1.2px)] bg-[length:14px_14px]"
-          ></div>
+          <img
+            src="images/banner-image.jpg"
+            alt="Godrej Azure"
+            class="block h-[220px] w-full object-cover sm:h-[260px] md:h-[300px] lg:h-[320px]"
+          />
         </div>
+      </div>
 
-        <div
-          class="relative mx-auto max-w-[1600px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32"
-        >
-          <div
-            class="grid min-h-[495px] grid-cols-1 items-center gap-10 py-14 md:py-16 lg:grid-cols-[46%_54%] lg:gap-20 lg:py-20 xl:gap-24"
+      <!-- Right content -->
+      <div class="flex justify-center lg:justify-start px-1 sm:px-3 lg:px-0">
+        <div class="max-w-[720px] text-center lg:text-left">
+          <h2
+            class="text-[22px] font-semibold uppercase tracking-[0.10em] text-[#5c1f2d] sm:text-[28px] md:text-[34px] lg:text-[32px] xl:text-[38px]"
           >
-            <!-- Left image block -->
-            <div class="flex justify-center lg:justify-start">
+            About Sai Aranya
+          </h2>
+
+          <p
+            class="mt-5 max-w-[760px] text-[14px] leading-[1.9] text-[#1f1f1f] sm:mt-6 md:text-[15px] lg:text-[13px] lg:leading-[1.8] xl:text-[15px] xl:leading-[1.9]"
+          >
+            Here’s your tropical green sanctuary in Nerkundram, Chennai.
+            Ramaniyam Sai Aranya signifies a charming project developed by
+            Ramaniyam Real Estates Pvt Ltd. The property covers 3.14 acres in a
+            prime area, offering airy, grand, and wellness-focused houses. The
+            homes are designed in 1, 2, and 3 BHK configurations that cater to
+            all types of families and even individuals in the city. You choose
+            your convenient floor plan from a diverse range of unit sizes,
+            starting from 806 sq. ft. to 1773 sq. ft. This shows the flexibility
+            in house selection. Variety not only creates distinction here but
+            also gives you the liberty to choose your suitable spot. Families
+            living here are from various walks of life, and living in such an
+            environment lets you experience different cultures within the same
+            address. The gated community has 488 families enjoying city life.
+            You get access to 18 amenities that focus on whole-family wellness,
+            are socially thoughtful, and make you eco-conscious. Together,
+            members of Ramaniyam Sai Aranya in Nerkundram experience the dignity
+            of belonging to a vibrant circle of like-minded families. Mutual
+            respect and personal comfort coexist in the same place.
+          </p>
+
+          <!-- Info Cards -->
+          <div class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <!-- Unit Config -->
+            <div
+              class="group flex items-start gap-3 rounded-[18px] border border-[#d9c7cc] bg-white/90 px-4 py-3 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+            >
               <div
-                class="w-full max-w-[560px] border-[8px] border-[#5c1f2d] bg-transparent p-[12px] sm:border-[9px] sm:p-[12px] md:max-w-[580px] lg:ml-[18px] xl:ml-[36px]"
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#f7eef1] text-[#5c1f2d]"
               >
-                <img
-                  src="images/banner-image.jpg"
-                  alt="Godrej Azure"
-                  class="block h-[250px] w-full object-cover sm:h-[300px] md:h-[345px] lg:h-[355px]"
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 10.75L12 4l9 6.75V20a1 1 0 01-1 1h-5.25v-6.25h-5.5V21H4a1 1 0 01-1-1v-9.25z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p
+                  class="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#8a6b73]"
+                >
+                  Unit Config
+                </p>
+                <h3 class="mt-1 text-[16px] font-semibold text-[#1f1f1f]">
+                  1, 2, 3 BHK Flats
+                </h3>
               </div>
             </div>
 
-            <!-- Right content -->
-            <div class="flex justify-center lg:justify-start px-5">
-              <div class="max-w-[720px] text-center lg:mt-[6px] lg:text-left">
-                <h2
-                  class="text-[22px] uppercase tracking-[0.10em] font-semibold text-[#5c1f2d] sm:text-[28px] md:text-[38px] lg:text-[36px] xl:text-[40px]"
+            <!-- Size -->
+            <div
+              class="group flex items-start gap-3 rounded-[18px] border border-[#d9c7cc] bg-white/90 px-4 py-3 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+            >
+              <div
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#f7eef1] text-[#5c1f2d]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
                 >
-                  About Sai Aranya
-                </h2>
-
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7 17L17 7M7 7h4M17 17h-4"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 9V5h4M19 15v4h-4"
+                  />
+                </svg>
+              </div>
+              <div>
                 <p
-                  class="mt-8 max-w-[760px] text-[14px] leading-[2.05] text-[#1f1f1f] sm:text-[14px] md:mt-10 md:text-[16px] lg:text-[13px] xl:text-[15px]"
+                  class="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#8a6b73]"
                 >
-                  Here’s your tropical green sanctuary in Nerkundram, Chennai.
-                  Ramaniyam Sai Aranya signifies a charming project developed by
-                  Ramaniyam Real Estates Pvt Ltd. The property covers 3.14 acres
-                  in a prime area, offering airy, grand, and wellness-focused
-                  houses. The homes are designed in 1, 2, and 3 BHK
-                  configurations that cater to all types of families and even
-                  individuals in the city. You choose your convenient floor plan
-                  from a diverse range of unit sizes, starting from 806 sq. ft.
-                  to 1773 sq. ft. This shows the flexibility in house selection.
-                  Variety not only creates distinction here but also gives you
-                  the liberty to choose your suitable spot. Families living here
-                  are from various walks of life, and living in such an
-                  environment lets you experience different cultures within the
-                  same address. The gated community has 488 families enjoying
-                  city life. You get access to 18 amenities that focus on
-                  whole-family wellness, are socially thoughtful, and make you
-                  eco-conscious. Together, members of Ramaniyam Sai Aranya in
-                  Nerkundram experience the dignity of belonging to a vibrant
-                  circle of like-minded families. Mutual respect and personal
-                  comfort coexist in the same place.
+                  Size
                 </p>
+                <h3 class="mt-1 text-[16px] font-semibold text-[#1f1f1f]">
+                  807 to 1716 Sq. Ft.
+                </h3>
+              </div>
+            </div>
 
-                <!-- Info Cards -->
-                <div
-                  class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-2"
+            <!-- Number of Units -->
+            <div
+              class="group flex items-start gap-3 rounded-[18px] border border-[#d9c7cc] bg-white/90 px-4 py-3 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+            >
+              <div
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#f7eef1] text-[#5c1f2d]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
                 >
-                  <!-- Unit Config -->
-                  <div
-                    class="group flex items-start gap-4 rounded-[20px] border border-[#d9c7cc] bg-white/90 px-5 py-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-                  >
-                    <div
-                      class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f7eef1] text-[#5c1f2d]"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="1.8"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M3 10.75L12 4l9 6.75V20a1 1 0 01-1 1h-5.25v-6.25h-5.5V21H4a1 1 0 01-1-1v-9.25z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <p
-                        class="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#8a6b73]"
-                      >
-                        Unit Config
-                      </p>
-                      <h3 class="mt-1 text-[18px] font-semibold text-[#1f1f1f]">
-                        1, 2, 3 BHK Flats
-                      </h3>
-                    </div>
-                  </div>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17 20v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"
+                  />
+                  <circle cx="9" cy="7" r="3" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 20v-2a4 4 0 00-3-3.87"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16 4.13a3 3 0 010 5.74"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p
+                  class="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#8a6b73]"
+                >
+                  Number of Units
+                </p>
+                <h3 class="mt-1 text-[16px] font-semibold text-[#1f1f1f]">
+                  488
+                </h3>
+              </div>
+            </div>
 
-                  <!-- Size -->
-                  <div
-                    class="group flex items-start gap-4 rounded-[20px] border border-[#d9c7cc] bg-white/90 px-5 py-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-                  >
-                    <div
-                      class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f7eef1] text-[#5c1f2d]"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="1.8"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M7 17L17 7M7 7h4M17 17h-4"
-                        />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M5 9V5h4M19 15v4h-4"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <p
-                        class="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#8a6b73]"
-                      >
-                        Size
-                      </p>
-                      <h3 class="mt-1 text-[18px] font-semibold text-[#1f1f1f]">
-                        807 to 1716 Sq. Ft.
-                      </h3>
-                    </div>
-                  </div>
-
-                  <!-- Number of Units -->
-                  <div
-                    class="group flex items-start gap-4 rounded-[20px] border border-[#d9c7cc] bg-white/90 px-5 py-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-                  >
-                    <div
-                      class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f7eef1] text-[#5c1f2d]"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="1.8"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M17 20v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"
-                        />
-                        <circle cx="9" cy="7" r="3" />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M21 20v-2a4 4 0 00-3-3.87"
-                        />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M16 4.13a3 3 0 010 5.74"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <p
-                        class="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#8a6b73]"
-                      >
-                        Number of Units
-                      </p>
-                      <h3 class="mt-1 text-[18px] font-semibold text-[#1f1f1f]">
-                        488
-                      </h3>
-                    </div>
-                  </div>
-
-                  <!-- Total Area -->
-                  <div
-                    class="group flex items-start gap-4 rounded-[20px] border border-[#d9c7cc] bg-white/90 px-5 py-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-                  >
-                    <div
-                      class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f7eef1] text-[#5c1f2d]"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="1.8"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M3 7l9-4 9 4-9 4-9-4z"
-                        />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M3 17l9 4 9-4"
-                        />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M3 12l9 4 9-4"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <p
-                        class="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#8a6b73]"
-                      >
-                        Total Area
-                      </p>
-                      <h3 class="mt-1 text-[18px] font-semibold text-[#1f1f1f]">
-                        3.14 Acres
-                      </h3>
-                    </div>
-                  </div>
-                </div>
+            <!-- Total Area -->
+            <div
+              class="group flex items-start gap-3 rounded-[18px] border border-[#d9c7cc] bg-white/90 px-4 py-3 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+            >
+              <div
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#f7eef1] text-[#5c1f2d]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 7l9-4 9 4-9 4-9-4z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 17l9 4 9-4"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 12l9 4 9-4"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p
+                  class="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#8a6b73]"
+                >
+                  Total Area
+                </p>
+                <h3 class="mt-1 text-[16px] font-semibold text-[#1f1f1f]">
+                  3.14 Acres
+                </h3>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- Amenities section -->
       <section class="bg-[#faf7f4] py-14 sm:py-16 lg:py-20">
