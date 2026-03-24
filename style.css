@@ -257,4 +257,84 @@ p,span,div,a,li{
 
 
 
-    
+/* Animation css */
+
+.fade-up,
+.fade-down,
+.fade-left,
+.fade-right,
+.fade-in,
+.animate-down,
+.animate-up {
+  opacity: 0;
+
+  transition:
+    opacity 2.1s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 2.1s cubic-bezier(0.22, 1, 0.36, 1);
+
+  will-change: transform, opacity;
+  transform: translate3d(0,0,0);
+  backface-visibility: hidden;
+}
+
+
+/* Directions */
+
+.fade-up    { transform: translateY(40px); }
+.fade-down  { transform: translateY(-40px); }
+.fade-left  { transform: translateX(-40px); }
+.fade-right { transform: translateX(40px); }
+.fade-in    { transform: scale(0.94); }
+
+
+/* Visible state */
+
+.show {
+  opacity: 1;
+  transform: translate3d(0,0,0) scale(1);
+}
+
+
+/* Keyframe cinematic versions */
+
+.animate-down,
+.animate-up {
+  transition: none;
+}
+
+
+/* Top → Down */
+
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Bottom → Up */
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.show.animate-down {
+  animation: slideDownFade 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.show.animate-up {
+  animation: slideUpFade 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
