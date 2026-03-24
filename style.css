@@ -341,7 +341,9 @@ p,span,div,a,li{
 }
 
 
-
+body{
+  overflow-x: hidden;
+}
 
 /* Banner desktop */
   /* =========================
