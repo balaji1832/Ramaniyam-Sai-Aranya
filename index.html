@@ -197,7 +197,7 @@
             class="hidden lg:block absolute top-8 xl:top-32 right-3 xl:right-14 z-20 w-[370px] xl:w-[420px] animate-up"
           >
             <div
-              class="relative bg-white rounded-2xl xl:rounded-3xl  overflow-hidden"
+              class="relative bg-white rounded-2xl xl:rounded-3xl overflow-hidden"
             >
               <!-- Top accent bar -->
               <div
@@ -513,10 +513,7 @@
       </section>
 
       <!-- section 1 -->
-      <section
-        class="relative  w-full overflow-hidden bg-[#d8cbbc]"
-        id="about"
-      >
+      <section class="relative w-full overflow-hidden bg-[#d8cbbc]" id="about">
         <!-- Left light panel -->
         <div
           class="absolute left-0 top-0 hidden h-full w-[24.5%] bg-[#f1f1f1] lg:block"
@@ -1195,7 +1192,7 @@
                 premium residential community crafted for modern urban living.
                 Spread across a spacious development with three elegant towers
                 and 488 well-planned residences, the project offers a wide range
-                of 1, 2,  and 3 BHK homes designed for comfort, functionality,
+                of 1, 2, and 3 BHK homes designed for comfort, functionality,
                 and long-term value.
               </p>
               <p
@@ -1930,15 +1927,15 @@
       class="fixed inset-0 z-[6000] hidden items-center justify-center bg-black/50 px-4 py-6"
     >
       <div class="relative w-full max-w-lg">
-        <!-- Close Button -->
+        <!-- Close Button (INSIDE) -->
         <button
           type="button"
           onclick="closeEnquiryModal()"
-          class="absolute -top-3 -right-3 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-700 shadow-lg hover:bg-gray-100"
+          class="absolute top-3 right-3 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
           aria-label="Close modal"
         >
           <svg
-            class="h-5 w-5"
+            class="h-4 w-4"
             fill="none"
             stroke="currentColor"
             stroke-width="2.2"
@@ -2423,41 +2420,32 @@
     <!-- Download brochure Mobile sticky -->
     <!-- Mobile Sticky Download Brochure Button -->
     <!-- Mobile Sticky Enquire Now -->
-    <div class="fixed bottom-0 left-0 right-0
-  z-[999] block md:hidden
-  bg-white/95 backdrop-blur-md
-  border-t border-gray-200
-  shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
-
-  <div class="container mx-auto
-    max-w-lg px-4 py-3">
-
-    <a
-      href="javascript:void(0)"
-      onclick="openEnquiryModal()"
-      class="flex h-[52px] w-full
-        items-center justify-center gap-2
-        rounded-xl bg-[#932223] px-5
-        text-[14px] font-semibold
-        uppercase tracking-[0.03em]
-        text-white transition duration-300
-        active:scale-[0.97]"
+    <div
+      class="fixed bottom-0 left-0 right-0 z-[999] block md:hidden border-t border-gray-200 bg-white/95 backdrop-blur-md shadow-[0_-4px_20px_rgba(0,0,0,0.08)]"
     >
-      <svg class="w-5 h-5 flex-shrink-0"
-        fill="none" stroke="currentColor"
-        stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M7 8h10M7 12h6m-9 8l3-3h11a2
-          2 0 002-2V5a2 2 0 00-2-2H5a2 2
-          0 00-2 2v10a2 2 0 002 2h2l-2 3z"
-        />
-      </svg>
-      <span>Enquire Now</span>
-    </a>
-
-  </div>
-</div>
+      <div class="px-4 py-3 pb-[calc(env(safe-area-inset-bottom)+12px)]">
+        <a
+          href="javascript:void(0)"
+          onclick="openEnquiryModal()"
+          class="flex h-[52px] w-full items-center justify-center gap-2 rounded-xl bg-[#932223] px-5 text-[14px] font-semibold uppercase tracking-[0.03em] text-white transition duration-300 active:scale-[0.97]"
+        >
+          <svg
+            class="h-5 w-5 flex-shrink-0"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7 8h10M7 12h6m-9 8l3-3h11a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h2l-2 3z"
+            />
+          </svg>
+          <span>Enquire Now</span>
+        </a>
+      </div>
+    </div>
     <!-- Toast Message -->
     <div
       id="globalToast"
