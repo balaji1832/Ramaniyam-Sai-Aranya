@@ -2423,32 +2423,41 @@
     <!-- Download brochure Mobile sticky -->
     <!-- Mobile Sticky Download Brochure Button -->
     <!-- Mobile Sticky Enquire Now -->
-    <div
-      class="fixed bottom-0 left-0 right-0 z-[999] block md:hidden px-4 py-3 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]"
-    >
-      <a
-        href="javascript:void(0)"
-        onclick="openEnquiryModal()"
-        class="flex h-[52px] w-full items-center justify-center gap-2 rounded-xl bg-[#932223] px-5 text-[14px] font-semibold uppercase tracking-[0.03em] text-white transition duration-300 active:scale-[0.97]"
-      >
-        <!-- ICON (Clean Chat Bubble) -->
-        <svg
-          class="w-5 h-5 flex-shrink-0"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M7 8h10M7 12h6m-9 8l3-3h11a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h2l-2 3z"
-          />
-        </svg>
+    <div class="fixed bottom-0 left-0 right-0
+  z-[999] block md:hidden
+  bg-white/95 backdrop-blur-md
+  border-t border-gray-200
+  shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
 
-        <span>Enquire Now</span>
-      </a>
-    </div>
+  <div class="container mx-auto
+    max-w-lg px-4 py-3">
+
+    <a
+      href="javascript:void(0)"
+      onclick="openEnquiryModal()"
+      class="flex h-[52px] w-full
+        items-center justify-center gap-2
+        rounded-xl bg-[#932223] px-5
+        text-[14px] font-semibold
+        uppercase tracking-[0.03em]
+        text-white transition duration-300
+        active:scale-[0.97]"
+    >
+      <svg class="w-5 h-5 flex-shrink-0"
+        fill="none" stroke="currentColor"
+        stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M7 8h10M7 12h6m-9 8l3-3h11a2
+          2 0 002-2V5a2 2 0 00-2-2H5a2 2
+          0 00-2 2v10a2 2 0 002 2h2l-2 3z"
+        />
+      </svg>
+      <span>Enquire Now</span>
+    </a>
+
+  </div>
+</div>
     <!-- Toast Message -->
     <div
       id="globalToast"
