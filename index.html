@@ -14,14 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body class="pb-[70px] md:pb-0">
     <!-- Header -->
@@ -159,7 +153,7 @@
       <section class="w-full overflow-hidden relative" id="home">
         <div class="relative w-full">
           <!-- Desktop Banner -->
-          <div class="hidden lg:block w-full h-[520px] xl:h-[620px]">
+          <div class="hidden lg:block w-full h-[520px] xl:h-[620px] fade-in">
             <img
               src="images/web.jpg"
               alt="Banner"
@@ -171,7 +165,7 @@
           </div>
 
           <!-- Mobile + Tablet Banner -->
-          <div class="block lg:hidden w-full">
+          <div class="block lg:hidden w-full fade-in">
             <img
               src="images/phone.jpg"
               alt="Banner"
@@ -181,7 +175,7 @@
 
           <!-- Desktop: Absolute Form over banner -->
           <div
-            class="hidden lg:block absolute top-8 xl:top-32 right-3 xl:right-14 z-20 w-[370px] xl:w-[420px]"
+            class="hidden lg:block absolute top-8 xl:top-32 right-3 xl:right-14 z-20 w-[370px] xl:w-[420px] animate-up"
           >
             <div
               class="relative bg-white rounded-2xl xl:rounded-3xl shadow-[0_8px_48px_rgba(0,0,0,0.18)] overflow-hidden"
@@ -342,7 +336,7 @@
 
         <!-- Mobile + Tablet: Form BELOW banner, full width, white bg -->
         <div
-          class="block lg:hidden w-full bg-white px-4 sm:px-8 md:px-12 py-8 sm:py-10"
+          class="block lg:hidden w-full bg-white px-4 sm:px-8 md:px-12 py-8 sm:py-10 animate-up"
         >
           <div class="max-w-md mx-auto">
             <div
@@ -2097,7 +2091,7 @@
               <li>
                 <a
                   href="#home"
-                  class="group flex items-center gap-4 text-[15px] font-medium text-white/95 transition hover:text-white"
+                  class="group flex items-center gap-4 text-[15px] font-medium text-white/95 transition hover:text-white transition-transform duration-300 ease-out hover:-translate-y-[3px]"
                 >
                   <svg
                     class="h-7 w-7 shrink-0 text-white/65 transition group-hover:text-white"
@@ -2125,7 +2119,7 @@
               <li>
                 <a
                   href="#about"
-                  class="group flex items-center gap-4 text-[15px] font-medium text-white/95 transition hover:text-white"
+                  class="group flex items-center gap-4 text-[15px] font-medium text-white/95 transition hover:text-white transition-transform duration-300 ease-out hover:-translate-y-[3px]"
                 >
                   <svg
                     class="h-7 w-7 shrink-0 text-white/65 transition group-hover:text-white"
@@ -2152,7 +2146,7 @@
               <li>
                 <a
                   href="#amenities-section"
-                  class="group flex items-center gap-4 text-[15px] font-medium text-white/95 transition hover:text-white"
+                  class="group flex items-center gap-4 text-[15px] font-medium text-white/95 transition hover:text-white transition-transform duration-300 ease-out hover:-translate-y-[3px]"
                 >
                   <svg
                     class="h-7 w-7 shrink-0 text-white/65 transition group-hover:text-white"
@@ -2179,7 +2173,7 @@
               <li>
                 <a
                   href="#projects"
-                  class="group flex items-center gap-4 text-[15px] font-medium text-white/95 transition hover:text-white"
+                  class="group flex items-center gap-4 text-[15px] font-medium text-white/95 transition hover:text-white transition-transform duration-300 ease-out hover:-translate-y-[3px]"
                 >
                   <svg
                     class="h-7 w-7 shrink-0 text-white/65 transition group-hover:text-white"
@@ -2206,7 +2200,7 @@
               <li>
                 <a
                   href="#floorplans"
-                  class="group flex items-center gap-4 text-[15px] font-medium text-white/95 transition hover:text-white"
+                  class="group flex items-center gap-4 text-[15px] font-medium text-white/95 transition hover:text-white transition-transform duration-300 ease-out hover:-translate-y-[3px]"
                 >
                   <svg
                     class="h-7 w-7 shrink-0 text-white/65 transition group-hover:text-white"
@@ -2233,7 +2227,7 @@
               <li>
                 <a
                   href="#location"
-                  class="group flex items-center gap-4 text-[15px] font-medium text-white/95 transition hover:text-white"
+                  class="group flex items-center gap-4 text-[15px] font-medium text-white/95 transition hover:text-white transition-transform duration-300 ease-out hover:-translate-y-[3px]"
                 >
                   <svg
                     class="h-7 w-7 shrink-0 text-white/65 transition group-hover:text-white"
@@ -2297,7 +2291,7 @@
               <!-- Address -->
               <div class="flex items-start gap-4">
                 <svg
-                  class="mt-1 h-8 w-8 shrink-0 text-white"
+                  class="mt-1 h-9 w-9 shrink-0 text-white"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -2322,7 +2316,7 @@
               <!-- Phone -->
               <div class="flex items-center gap-4">
                 <svg
-                  class="h-8 w-8 shrink-0 text-white"
+                  class="h-7 w-7 shrink-0 text-white"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -2335,18 +2329,21 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                <a
-                  href="tel:+917200423919"
-                  class="text-[15px] font-medium text-white/95 transition hover:text-white"
-                >
-                  +91 7200423919
-                </a>
+                <div class="flex items-center gap-2 text-[15px] font-medium text-white/95">
+  <a href="tel:+917200423919" class="hover:text-white transition">
+    +91 7200423919
+  </a>
+  <span>/</span>
+  <a href="tel:+917305070380" class="hover:text-white transition">
+    +91 7305070380
+  </a>
+</div>
               </div>
 
               <!-- Email -->
               <div class="flex items-center gap-4">
                 <svg
-                  class="h-8 w-8 shrink-0 text-white"
+                  class="h-7 w-7 shrink-0 text-white"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
