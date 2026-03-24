@@ -1,24 +1,42 @@
-    // video script 
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.getElementById("virtualTourVideo");
+  const playBtn = document.getElementById("playBtn");
 
-      const video = document.getElementById("virtualTourVideo");
-      const playBtn = document.getElementById("playBtn");
+  if (!video || !playBtn) return;
 
-      playBtn.addEventListener("click", () => {
-        video.setAttribute("controls", "controls");
-        video.play();
-        playBtn.style.display = "none";
-      });
+  async function startVideo() {
+    try {
+      video.setAttribute("controls", "controls");
+      await video.play();
+      playBtn.style.display = "none";
+    } catch (error) {
+      console.error("Video play failed:", error);
+    }
+  }
 
-      video.addEventListener("pause", () => {
-        if (video.currentTime > 0 && !video.ended) {
-          playBtn.style.display = "flex";
-        }
-      });
+  playBtn.addEventListener("click", startVideo);
 
-      video.addEventListener("play", () => {
-        playBtn.style.display = "none";
-      });
+  video.addEventListener("click", function () {
+    if (video.paused) {
+      startVideo();
+    } else {
+      video.pause();
+    }
+  });
 
-      video.addEventListener("ended", () => {
-        playBtn.style.display = "flex";
-      });
+  video.addEventListener("play", function () {
+    playBtn.style.display = "none";
+  });
+
+  video.addEventListener("pause", function () {
+    if (!video.ended) {
+      playBtn.style.display = "flex";
+    }
+  });
+
+  video.addEventListener("ended", function () {
+    playBtn.style.display = "flex";
+    video.removeAttribute("controls");
+    video.currentTime = 0;
+  });
+});
