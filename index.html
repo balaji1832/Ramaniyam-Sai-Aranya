@@ -14,8 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="pb-[70px] md:pb-0">
     <!-- Header -->
@@ -152,25 +158,38 @@
     <main>
       <section class="w-full overflow-hidden relative" id="home">
         <div class="relative w-full">
-          <!-- Desktop Banner -->
-          <div class="hidden lg:block w-full h-[520px] xl:h-[620px] fade-in">
-            <img
-              src="images/web.jpg"
-              alt="Banner"
-              class="w-full h-full object-cover"
-            />
+          <!-- Banner Wrapper -->
+          <div id="heroBanner" class="relative w-full overflow-hidden">
+            <!-- Desktop Banner -->
             <div
-              class="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-transparent"
-            ></div>
-          </div>
+              class="relative hidden lg:block w-full h-[520px] xl:h-[620px] overflow-hidden"
+            >
+              <!-- Animated image -->
+              <img
+                src="images/web.jpg"
+                alt="Banner"
+                class="banner-zoom w-full h-full object-cover"
+              />
 
-          <!-- Mobile + Tablet Banner -->
-          <div class="block lg:hidden w-full fade-in">
-            <img
-              src="images/phone.jpg"
-              alt="Banner"
-              class="w-full h-auto block"
-            />
+              <!-- Dark gradient overlay -->
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-black/35 via-black/15 to-transparent"
+              ></div>
+
+              <!-- Soft light effect -->
+              <div
+                class="banner-shine absolute inset-0 pointer-events-none"
+              ></div>
+            </div>
+
+            <!-- Mobile + Tablet Banner -->
+            <div class="block lg:hidden w-full">
+              <img
+                src="images/phone.jpg"
+                alt="Banner"
+                class="mobile-banner w-full h-auto block"
+              />
+            </div>
           </div>
 
           <!-- Desktop: Absolute Form over banner -->
@@ -753,7 +772,7 @@
           <div class="mx-auto max-w-3xl text-center">
             <p
               class="heading-anim text-[12px] fade-in font-semibold uppercase tracking-[0.3em] text-[#8f6b74] opacity-0 translate-y-6"
-            > 
+            >
               Amenities
             </p>
             <h2
@@ -1261,9 +1280,7 @@
       </section>
 
       <!-- video section -->
-      <section
-        class="w-full bg-[#d8cbbd] py-12 sm:py-14 md:py-16 lg:py-20 "
-      >
+      <section class="w-full bg-[#d8cbbd] py-12 sm:py-14 md:py-16 lg:py-20">
         <div class="mx-auto max-w-[980px] px-5 sm:px-6 md:px-8 lg:px-0">
           <div class="text-left lg:text-center">
             <h2
@@ -1551,7 +1568,7 @@
 
         <div class="relative mx-auto max-w-[1380px] px-4 sm:px-6 lg:px-8">
           <!-- Header -->
-          <div class="mx-auto max-w-[920px] text-left  lg:text-center">
+          <div class="mx-auto max-w-[920px] text-left lg:text-center">
             <p
               class="font-body text-[12px] fade-left font-medium uppercase tracking-[0.28em] text-[#6b3a46]/70 sm:text-[13px]"
             >
@@ -1731,16 +1748,22 @@
       <section class="bg-[#faf7f4] py-14 sm:py-16 lg:py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <!-- Section Title -->
-          <div class="text-start lg:text-center max-w-2xl mx-auto mb-10 lg:mb-14">
+          <div
+            class="text-start lg:text-center max-w-2xl mx-auto mb-10 lg:mb-14"
+          >
             <p
               class="text-xs font-semibold uppercase tracking-[0.3em] fade-right text-[#932223]"
             >
               Contact Us
             </p>
-            <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-gray-900 fade-in">
+            <h2
+              class="mt-3 text-3xl sm:text-4xl font-bold text-gray-900 fade-in"
+            >
               Enquire & Visit Our Campus
             </h2>
-            <p class="mt-3 text-sm sm:text-base text-gray-600 leading-relaxed fade-left">
+            <p
+              class="mt-3 text-sm sm:text-base text-gray-600 leading-relaxed fade-left"
+            >
               Share your details with us or explore our location easily.
             </p>
           </div>
@@ -1759,7 +1782,9 @@
                 >
                   Enquiry Form
                 </p>
-                <h3 class="mt-2 text-2xl sm:text-3xl font-bold text-gray-900 fade-right">
+                <h3
+                  class="mt-2 text-2xl sm:text-3xl font-bold text-gray-900 fade-right"
+                >
                   Get in Touch
                 </h3>
                 <p class="mt-2 text-sm text-gray-600 leading-relaxed fade-in">
@@ -2069,7 +2094,9 @@
         >
           <!-- Column 1 -->
           <div>
-            <h3 class="text-[22px] font-semibold leading-none sm:text-[25px] fade-left">
+            <h3
+              class="text-[22px] font-semibold leading-none sm:text-[25px] fade-left"
+            >
               Ramaniyam Real Estates
             </h3>
             <p
@@ -2083,7 +2110,9 @@
 
           <!-- Column 2 -->
           <div class="lg:pl-4">
-            <h3 class="text-[22px] font-semibold leading-none sm:text-[25px] fade-in ">
+            <h3
+              class="text-[22px] font-semibold leading-none sm:text-[25px] fade-in"
+            >
               Quick Links
             </h3>
 
@@ -2283,7 +2312,9 @@
 
           <!-- Column 3 -->
           <div class="lg:pl-2">
-            <h3 class="text-[22px] font-semibold leading-none sm:text-[25px] animate-up">
+            <h3
+              class="text-[22px] font-semibold leading-none sm:text-[25px] animate-up"
+            >
               Contact Us
             </h3>
 
@@ -2329,15 +2360,23 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                <div class="flex items-center gap-2 text-[15px] font-medium text-white/95">
-  <a href="tel:+917200423919" class="hover:text-white transition">
-    +91 7200423919
-  </a>
-  <span>/</span>
-  <a href="tel:+917305070380" class="hover:text-white transition">
-    +91 7305070380
-  </a>
-</div>
+                <div
+                  class="flex items-center gap-2 text-[15px] font-medium text-white/95"
+                >
+                  <a
+                    href="tel:+917200423919"
+                    class="hover:text-white transition"
+                  >
+                    +91 7200423919
+                  </a>
+                  <span>/</span>
+                  <a
+                    href="tel:+917305070380"
+                    class="hover:text-white transition"
+                  >
+                    +91 7305070380
+                  </a>
+                </div>
               </div>
 
               <!-- Email -->
@@ -2704,18 +2743,16 @@
 
     <!-- Script Section -->
 
-     <script src="js/Animation.js"></script>
-     <script src="js/amenities-script.js"></script>
-     <script src="js/download-brochure-script.js"></script>
-     <script src="js/enquiryform-script.js"></script>
-     <script src="js/gallery-script.js"></script>
-     <script src="js/hamburger-script.js"></script>
-     <script src="js/headermenu-scroll-active-script.js"></script>
-     <script src="js/initially-modal-script.js"></script>
-     <script src="js/landmarks-script.js"></script>
-     <script src="js/layout-script.js"></script>
-     <script src="js/video-script.js"></script>
-
-
+    <script src="js/Animation.js"></script>
+    <script src="js/amenities-script.js"></script>
+    <script src="js/download-brochure-script.js"></script>
+    <script src="js/enquiryform-script.js"></script>
+    <script src="js/gallery-script.js"></script>
+    <script src="js/hamburger-script.js"></script>
+    <script src="js/headermenu-scroll-active-script.js"></script>
+    <script src="js/initially-modal-script.js"></script>
+    <script src="js/landmarks-script.js"></script>
+    <script src="js/layout-script.js"></script>
+    <script src="js/video-script.js"></script>
   </body>
 </html>
