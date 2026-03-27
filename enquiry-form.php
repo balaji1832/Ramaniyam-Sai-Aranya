@@ -142,7 +142,6 @@ $body = '
     <tr>
       <td align="center">
         <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.08);">
-
           <tr>
             <td style="padding:20px 24px;color:#ffffff;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -171,7 +170,6 @@ $body = '
           <tr>
             <td style="padding:28px;">
               <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
-
                 <tr>
                   <td style="padding:14px 16px;background:#f9fafb;border:1px solid #e5e7eb;font-size:14px;font-weight:700;color:#111827;width:35%;">
                     Full Name
@@ -198,9 +196,6 @@ $body = '
                     ' . htmlspecialchars($mobile) . '
                   </td>
                 </tr>
-
-             
-
               </table>
             </td>
           </tr>
@@ -210,7 +205,6 @@ $body = '
               ' . date("Y") . ' Ramaniyam. All rights reserved.
             </td>
           </tr>
-
         </table>
       </td>
     </tr>
@@ -246,7 +240,8 @@ try {
 
     echo json_encode([
         'status' => 'success',
-        'message' => 'Thank you! Your enquiry has been submitted successfully.'
+        'message' => 'Thank you! Your enquiry has been submitted successfully.',
+        'redirect' => '/thankyou.html'
     ]);
 } catch (Exception $e) {
     echo json_encode([

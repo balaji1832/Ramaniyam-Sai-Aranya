@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(147, 34, 35, 0.10), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(212, 173, 69, 0.10), transparent 35%),
+        linear-gradient(135deg, #f9f5f1 0%, #f3ede7 50%, #fcfaf8 100%);
+    }
+
+    .floating {
+      animation: floatY 5s ease-in-out infinite;
+    }
+
+    .floating-delay {
+      animation: floatY 6.5s ease-in-out infinite;
+    }
+
+    .fade-up {
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    .scale-in {
+      animation: scaleIn 0.6s ease forwards;
+    }
+
+    @keyframes floatY {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen overflow-x-hidden px-4 py-6 sm:px-6 lg:px-8">
+
+  <div class="relative flex min-h-[100vh] items-center justify-center">
+    
+    <!-- Background glow -->
+    <div class="floating absolute left-[8%] top-[14%] h-32 w-32 rounded-full bg-[#932223]/10 blur-3xl sm:h-44 sm:w-44"></div>
+    <div class="floating-delay absolute bottom-[12%] right-[8%] h-40 w-40 rounded-full bg-[#d4ad45]/15 blur-3xl sm:h-52 sm:w-52"></div>
+
+    <!-- Center card -->
+    <div class="fade-up relative z-10 w-full max-w-[720px]">
+      <div class="relative overflow-hidden rounded-[28px] border border-white/60 bg-white/75 px-6 py-8 shadow-[0_20px_70px_rgba(17,24,39,0.10)] backdrop-blur-2xl sm:px-10 sm:py-10 lg:px-12 lg:py-12">
+        
+        <!-- top shine -->
+        <div class="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white to-transparent"></div>
+
+        <!-- soft overlay -->
+        <div class="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-[#932223]/[0.03] pointer-events-none"></div>
+
+        <div class="relative z-10 flex flex-col items-center text-center">
+          
+          <!-- Badge -->
+          <div class="scale-in mb-4 inline-flex items-center gap-2 rounded-full border border-[#d4ad45]/30 bg-[#fff8eb] px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#a17822] sm:text-[11px]">
+            <span class="h-2 w-2 rounded-full bg-[#d4ad45]"></span>
+            Enquiry Submitted
+          </div>
+
+          <!-- Icon -->
+          <div class="scale-in mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-green-50 to-green-100 shadow-[inset_0_2px_10px_rgba(255,255,255,0.9),0_14px_35px_rgba(34,197,94,0.15)] ring-1 ring-green-200/70 sm:h-24 sm:w-24">
+            <div class="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-inner sm:h-16 sm:w-16">
+              <svg
+                class="h-7 w-7 text-green-600 sm:h-8 sm:w-8"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.6"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Title -->
+          <h1 class="text-3xl font-bold tracking-tight text-[#7f1d1d] sm:text-4xl lg:text-5xl">
+            Thank You!
+          </h1>
+
+          <!-- Description -->
+          <p class="mt-4 max-w-[560px] text-[14px] leading-7 text-gray-600 sm:text-[15px] lg:text-base">
+            Your enquiry has been received successfully. Our team will review your request and get in touch with you shortly.
+          </p>
+
+          <!-- Divider -->
+          <div class="my-6 h-px w-full max-w-[420px] bg-gradient-to-r from-transparent via-[#ddd3ca] to-transparent sm:my-7"></div>
+
+          <!-- Info blocks -->
+          <div class="grid w-full max-w-[560px] gap-3 sm:grid-cols-2 sm:gap-4">
+            <div class="rounded-2xl border border-white/70 bg-white/70 p-4 text-left shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
+              <p class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#932223]/70 sm:text-[11px]">
+                Status
+              </p>
+              <p class="mt-2 text-sm font-medium text-gray-800">
+                Enquiry submitted successfully
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/70 bg-white/70 p-4 text-left shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
+              <p class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#932223]/70 sm:text-[11px]">
+                Next Step
+              </p>
+              <p class="mt-2 text-sm font-medium text-gray-800">
+                Our team will contact you shortly
+              </p>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="mt-7 sm:mt-8">
+            <a
+              href="index.html"
+              class="group inline-flex min-h-[52px] items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-[#932223] to-[#7f1d1d] px-7 py-3 text-sm font-semibold text-white shadow-[0_16px_35px_rgba(147,34,35,0.25)] transition duration-300 hover:-translate-y-[2px] hover:shadow-[0_20px_40px_rgba(147,34,35,0.32)] sm:px-8 sm:text-[15px]"
+            >
+              <span class="text-base">🏠</span>
+              Back to Home
+              <svg
+                class="h-4 w-4 transition group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Footer note -->
+          <p class="mt-5 text-xs tracking-[0.08em] text-gray-500">
+            We appreciate your interest.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
